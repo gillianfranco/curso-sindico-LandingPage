@@ -80,6 +80,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------- */
@@ -183,7 +184,6 @@ div#container-professores main header p{
 }
 div#container-professores main section{
     margin-top: 2.5em;
-    padding: 0em 6em;
 }
 article.article-professores{
     width: 100%;
@@ -327,7 +327,7 @@ footer#footer-principal main p{
 
 @media screen and (max-width: 854px){
     article.article-professores{
-        height: 50vw;
+        height: 60vw;
         display: flex;
         flex-direction: column;
         overflow: hidden;
@@ -343,40 +343,42 @@ footer#footer-principal main p{
     }
 }
 
+@media screen and (max-width: 768px){
+    article.article-professores{
+        height: 68vw;
+    }
+}
 
 @media screen and (max-width: 720px){
     header#aboveTheFold{
         background-image: url(../images/Fundos/Fundo\ -\ Above\ the\ fold\ -\ 720px.png);
     }
+
     article.article-professores{
         height: 68vw;
     }
 }
 
 @media screen and (max-width: 654px){
-
-}
-
-@media screen and (max-width: 480px){
-    .container{
-        padding: 0.5em;
-        display: block;
-    }
     .titulo{
-        font-size: 1.6em;
+        font-size: 2em;
         text-align: center;
     }
     .subtitulo{
-        font-size: 0.6em;
+        font-size: 1em;
         text-align: center;
     }
     .texto{
+        font-size: 0.9em;
+        text-align: justify;
+    }
+    .botao {
         font-size: 0.8em;
-        text-align: center;
     }
 
     header#aboveTheFold {
         width: 100%;
+        min-height: 100vh;
         background-image: url(../images/Fundos/Fundo\ -\ Above\ the\ fold\ -\ 480p.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -394,7 +396,75 @@ footer#footer-principal main p{
     }
     section#container-VideoBotao button{
         padding: 0.7em;
-        margin-top: 8em;
+        margin-top: 14em;
+        margin-bottom: 0.2em;
+    }
+
+    div.container-article{
+        flex-direction: column;
+        align-items: center;
+    }
+    div.container-article:first-child{
+        margin: 0;
+    }
+    article.article-documentacao{
+        width: 70%;
+    }
+    article.article-documentacao{
+        margin-bottom: 1em;
+    }
+
+    div#container-professores main section{
+        padding: 0;
+    }
+    article.article-professores{
+        height: 154vw;
+    }
+
+    div#container-preco p.titulo{
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .container{
+        padding: 0.5em;
+        display: block;
+    }
+    .titulo{
+        font-size: 1.6em;
+        text-align: center;
+    }
+    .subtitulo{
+        font-size: 1em;
+        text-align: center;
+    }
+    .texto{
+        font-size: 0.8em;
+        text-align: justify;
+    }
+
+    header#aboveTheFold {
+        width: 100%;
+        min-height: 100vh;
+        background-image: url(../images/Fundos/Fundo\ -\ Above\ the\ fold\ -\ 480p.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    header#aboveTheFold main.container{
+        width: 100%;
+    }
+    header#titulo-principal img{
+        margin-top: -1em;
+    }
+    section#container-VideoBotao video{
+        border-radius: 0.8em;
+        margin-top: -2em;
+    }
+    section#container-VideoBotao button{
+        padding: 0.7em;
+        margin-top: 16em;
         margin-bottom: 0.2em;
     }
 
@@ -459,10 +529,14 @@ footer#footer-principal main p{
         align-items: center;
     }
     div.container-cortes{
-        width: 100%;
         display: flex;
         flex-direction: column;
-        padding: 0;
+    }
+    div.container-cortes:last-child{
+        margin-top: 0;
+    }
+    div.container-cortes video{
+        height: 53vw;
     }
 
     div#container-precoCurso main header{
@@ -476,7 +550,7 @@ footer#footer-principal main p{
     }
     div#container-textoPers p{
         width: 100%;
-        text-align: center;
+        text-align: justify;
     }
     div#container-preco{
         margin-top: 0em;
