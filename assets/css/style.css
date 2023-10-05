@@ -88,7 +88,7 @@ body{
 header#aboveTheFold{
     max-width: 100%;
     max-height: 100vh;
-    background-image: url(../images/Fundos/Fundo\ -\ Above\ the\ fold\ -\ 2160p.png);
+    background-image: url(../images/Fundos/Fundo-AboveTheFold-2160p.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -254,7 +254,7 @@ div.container-cortes video{
 
 div#container-precoCurso{
     width: 100%;
-    background-image: url(../images/Fundos/fundo\(FULL\ HD\).png);
+    background-image: url(../images/Fundos/fundoFULLHD.png);
     background-size: cover;
     background-position: center;
 }
@@ -379,7 +379,7 @@ footer#footer-principal main p{
     header#aboveTheFold {
         width: 100%;
         min-height: 100vh;
-        background-image: url(../images/Fundos/Fundo\ -\ Above\ the\ fold\ -\ 480p.png);
+        background-image: url(../images/Fundos/Fundo-AboveTheFold-480p.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -447,7 +447,7 @@ footer#footer-principal main p{
     header#aboveTheFold {
         width: 100%;
         min-height: 100vh;
-        background-image: url(../images/Fundos/Fundo\ -\ Above\ the\ fold\ -\ 480p.png);
+        background-image: url(../images/Fundos/Fundo-AboveTheFold-480p.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -576,155 +576,3 @@ footer#footer-principal main p{
         width: 8em;
     }
 }
-
-/* @media screen and (max-width: 1684px){
-    *{
-        font-size: 2.3vh;
-    }
-}
-
-@media screen and (max-width: 1448px){
-    *{
-        font-size: 2vh;
-    }
-    article.article-professores{
-        height: 27em;
-    }
-    div.container-fotoProf{
-        width: 52%;
-    }
-}
-
-@media screen and (max-width: 1280px){
-    article.article-professores{
-        height: 28em;
-    }
-}
-
-@media screen and (max-width: 1200px){
-    .titulo {
-        font-size: 2em;
-    }
-    .subtitulo {
-        font-size: 1em;
-    }
-    article.article-professores{
-        flex-direction: column;
-    }
-    div.container-fotoProf{
-        width: 100%;
-        height: 50%;
-    }
-    div.container-textoProf{
-        width: 100%;
-        height: 50%;
-    }
-} */
-
-
-
-
-
-
-/* @media (max-width: 1440px) and (max-height: 2560px){
-    body{
-        width: 100%;
-    }
-
-    .titulo {
-        font-size: 2em;
-    }
-    .subtitulo {
-        font-size: 1em;
-    }
-
-    header#aboveTheFold {
-        width: 100%;
-        height: 104vh;
-        background-image: url(../images/Fundos/Fundo\ -\ Above\ the\ fold\ -\ 480p.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    header#aboveTheFold main.container{
-        width: 100%;
-    }
-    header#titulo-principal{
-        height: 16%;
-    }
-    header#titulo-principal img{
-        margin-top: -2em;
-    }
-
-    section#container-VideoBotao{
-        height: 84%;
-    }
-    section#container-VideoBotao button{
-        margin-top: 13.5em;
-    }
-
-    article.article-documentacao {
-        width: 33%;
-    }
-    article.article-documentacao p{
-        text-align: center;
-    }
-
-    div#container-professores main header p{
-        text-align: center;
-    }
-    div#container-professores main section{
-        padding: 0px;
-    }
-    article.article-professores{
-        height: 40em;
-        flex-direction: column;
-    }
-    div.container-fotoProf{
-        width: 100%;
-        height: 50%;
-    }
-    div.container-textoProf{
-        width: 100%;
-        height: 50%;
-    }
-
-    div#container-cortesPodcast main header p{
-        text-align: center;
-    }
-} */
-
-/* @media (max-width: 480px) and (max-height: 854px){
-    *{
-        font-size: 3vh;
-    }
-
-    body{
-        width: 96vh;
-    }
-
-    header#aboveTheFold {
-        width: 100%;
-        height: 132vh;
-        background-image: url(../images/Fundos/Fundo\ -\ Above\ the\ fold\ -\ 480p.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    header#aboveTheFold main.container{
-        width: 100%;
-    }
-    header#titulo-principal{
-        height: 16%;
-    }
-    header#titulo-principal img{
-        margin-top: -2em;
-    }
-
-    section#container-VideoBotao{
-        height: 84%;
-    }
-    section#container-VideoBotao button{
-        margin-top: 11.5em;
-    }
-} */
