@@ -25,6 +25,7 @@ body{
     --dourado: #e2b152;
     --azul: #344754;
     --douradoEscuro: #ab8035;
+    --azulClaro: #4893e8;
 }
 
 .container{
@@ -1979,7 +1980,7 @@ div.container-cortes video{
 
 div#container-precoCurso{
     width: 100%;
-    background-image: url(../images/Fundos/Fundo-ConteinerPreco.png);
+    background-image: url(../images/Fundos/Fundo-ConteinerPreco2.png);
     background-size: cover;
     background-position: center;
 }
@@ -1991,10 +1992,10 @@ div#container-precoCurso main section{
     width: 100%;
     margin-top: 0.5em;
 }
-div#container-textoPers{
+/* div#container-textoPers{
     width: 100%;
     padding: 0em 2.5em;
-}
+} */
 /* p#textoPers{
     font-size: 1.2em;
     color: white;
@@ -2005,35 +2006,46 @@ div#container-preco{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 2em;
 }
 div.precos{
+    width: 420px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    box-shadow: 0em 0em 1em -0.2em rgba(0, 0, 0, 0.444);
+    box-shadow: rgba(0, 0, 0, 0.2) 0em 0em 1em 0.2em;
     padding: 30px 30px;
+    border-radius: 10px;
 }
 div.precos:nth-child(1), div.precos:nth-child(3){
+    color: white;
     background-color: var(--azul);
 }
 div.precos:nth-child(2){
+    color: var(--azul);
     background-color: white;
 }
-div.precos h1{
-    margin-bottom: 10px;
+div.precos div.beneficios h1{
+    margin-bottom: 0.2em;
     font-size: 2em;
 }
-div.precos ul{
-    font-size: 1.5em;
+div.preco{
+    margin-bottom: 0.6em;
+}
+div.preco p.texto{
+    text-align: center;
+}
+div.precos tr td.subtitulo{
+    text-align: justify;
 }
 div.precos .botao{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2em;
     padding: 10px 25px;
+    background-color: green;
+    width: 60%;
+    margin-top: 0.6em;
+    margin-bottom: 0.2em;
 }
 /* div#container-preco p.titulo{
     color: var(--azul);
