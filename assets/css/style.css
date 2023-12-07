@@ -2027,7 +2027,13 @@ div.precos:nth-child(2){
     color: var(--azul);
     background-color: white;
 }
-div.precos div.beneficios h1{
+td.information{
+    vertical-align: center;
+}
+td.information img{
+    width: 1.5em;
+}
+div.beneficios h1{
     margin-bottom: 0.2em;
     font-size: 2em;
 }
@@ -2046,6 +2052,9 @@ div.precos .botao{
     width: 60%;
     margin-top: 0.6em;
     margin-bottom: 0.2em;
+}
+.botaoDetalhes{
+    width: 1.5em;
 }
 /* div#container-preco p.titulo{
     color: var(--azul);
@@ -2074,17 +2083,50 @@ footer#footer-principal{
 footer#footer-principal main{
     width: 100%;
 }
-footer#footer-principal main div{
+.tiraDuvidas{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.tiraDuvidas div{
+    display: flex;
+    flex-direction: column;
+    padding: 0em 1.5em;
+}
+.tiraDuvidas div p{
+    text-align: justify;
+}
+.tiraDuvidas div header p{
+    font-size: 1.2em;
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+div.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.redes td{
+    width: 4em;
+    height: 4em;
+    text-align: center;
+}
+div.redes a:hover img{
+    width: 52px;
+}
+footer#footer-principal main div.center{
     width: 100%;
     margin-top: 1em;
 }
-footer#footer-principal main div img{
+footer#footer-principal main div.center img{
     width: 12em;
 }
 footer#footer-principal main p{
     color: white;
-    text-align: center;
-    margin-top: 1.5em;
+    margin-top: 0.5em;
 }
 
 /* -------------------------- Responsividade -------------------------------- */
