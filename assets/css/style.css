@@ -2128,6 +2128,13 @@ div.redes a img{
 div.redes a:hover img{
     width: 82%;
 }
+div.redes div{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+}
 footer#footer-principal main div.center{
     width: 100%;
     margin-top: 1em;
@@ -2199,11 +2206,10 @@ footer#footer-principal main p{
     
     section#container-VideoBotao{
         max-width: 100%;
-        height: 80%;
-        flex-direction: column;
-        justify-content: space-around;
+        height: 60%;
+        display: block;
         padding: 1em;
-        margin-top: 7em;
+        margin-top: 4em;
     }
     section#container-VideoBotao video{
         width: 100%;
@@ -2216,6 +2222,11 @@ footer#footer-principal main p{
     }
 
     /* ----------------------------------------------------------------------------- */
+
+    #container-documentacao{
+        z-index: 1;
+        margin-top: -5em;
+    }
 
     article.article-documentacao{
         width: 315px;
@@ -2238,7 +2249,7 @@ footer#footer-principal main p{
     /* --------------------------------------------------------- */
 
     article.article-professores{
-        height: 70vh;
+        height: 85vh;
         background-color: white;
         border-radius: 2em;
         box-shadow: 0px 0px 60px -2px rgba(0, 0, 0, 0.2);
