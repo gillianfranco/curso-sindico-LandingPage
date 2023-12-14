@@ -6,6 +6,11 @@
     font-size: 2.3vh;
 }
 
+:target:not(#container-preco){
+    background-color: var(--dourado);
+    border-radius: 1em;
+}
+
 body{
     max-width: 100%;
     overflow-x: hidden;
@@ -101,7 +106,7 @@ body{
 header#aboveTheFold{
     width: 100%;
     max-height: 100vh;
-    background-image: url(../images/AboveTheFold/Imagem-AboveTheFold-Paisagem2.png);
+    background-image: url(../images/AboveTheFold/Imagem-AboveTheFold-Paisagem.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -1984,7 +1989,7 @@ div.container-cortes video{
 
 div#container-precoCurso{
     width: 100%;
-    background-image: url(../images/Fundos/Fundo-ConteinerPreco2.png);
+    background-image: url(../images/Fundos/Fundo-ConteinerPreco.png);
     background-size: cover;
     background-position: center;
 }
@@ -2192,7 +2197,7 @@ footer#footer-principal main p{
         font-weight: 300;
     }
     header#aboveTheFold{
-        background-image: url(../images/AboveTheFold/Imagem-AboveTheFold-Retrato2.png);
+        background-image: url(../images/AboveTheFold/Imagem-AboveTheFold-Retrato.png);
         height: 100vh;
         background-size: cover;
         background-position: top;
@@ -2297,7 +2302,7 @@ footer#footer-principal main p{
         flex-direction: column;
     }
     div.container-cortes video{
-        height: 53vw;
+        height: 52.8vw;
         border-radius: 0.8em;
         box-shadow: 0em 0em 1em -0.2em rgba(0, 0, 0, 0.444);
         margin: 0.2em;
