@@ -60,13 +60,16 @@ body{
     align-items: center;
 }
 .botao{
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-family: "Montserrat";
     font-weight: 600;
     color: white;
+    text-decoration: none;
     background-color: var(--dourado);
     border-radius: 2em;
     box-shadow: 0em 0em 1em -0.2em rgba(0, 0, 0, 0.444);
+    text-align: center;
+    padding: 0.8em 1em;
 }
 .titulo{
     font-size: 2.6em;
@@ -144,7 +147,7 @@ section#container-VideoBotao video{
     width: 100%;
     border-radius: 0.8em;
 }
-section#container-VideoBotao button{
+section#container-VideoBotao .botao{
     width: 100%;
     margin-top: 0.5em;
     padding: 0.7em;
@@ -1978,8 +1981,9 @@ div.container-cortes{
 div.container-cortes:last-child{
     margin-bottom: 1em;
 }
-div.container-cortes video{
-    height: 24vw;
+div.container-cortes iframe{
+    width: 50%;
+    height: 26vw;
     border-radius: 0.8em;
     box-shadow: 0em 0em 1em -0.2em rgba(0, 0, 0, 0.444);
     margin: 0.2em;
@@ -2002,16 +2006,16 @@ div#container-precoCurso main section{
     width: 100%;
     margin-top: 0.5em;
 }
-/* div#container-textoPers{
+div#container-textoPers{
     width: 100%;
     padding: 0em 2.5em;
-} */
-/* p#textoPers{
-    font-size: 1.2em;
+}
+p#textoPers{
+    font-size: 1.4em;
     color: white;
     text-shadow: 0.1em 0.08em 0.1em rgba(0, 0, 0, 0.444);
     text-align: justify;
-} */
+}
 div#container-preco{
     width: 100%;
     display: flex;
@@ -2069,7 +2073,6 @@ div.precos tr td.subtitulo{
     text-align: justify;
 }
 div.precos .botao{
-    padding: 0.6em 1em;
     background-color: green;
     width: 60%;
     margin-top: 1em;
@@ -2230,7 +2233,8 @@ footer#footer-principal main p{
         width: 100%;
         border-radius: 0.8em;
     }
-    section#container-VideoBotao button{
+    section#container-VideoBotao .botao{
+        display: flex;
         width: 100%;
         margin-top: 0.5em;
         padding: 0.7em;
@@ -2301,7 +2305,8 @@ footer#footer-principal main p{
         width: 100%;
         flex-direction: column;
     }
-    div.container-cortes video{
+    div.container-cortes iframe{
+        width: 100%;
         height: 52.8vw;
         border-radius: 0.8em;
         box-shadow: 0em 0em 1em -0.2em rgba(0, 0, 0, 0.444);
@@ -2318,8 +2323,12 @@ footer#footer-principal main p{
         width: 100%;
         margin-bottom: 1em;
     }
-    div#container-preco div.precos button{
+    div#container-preco div.precos .botao{
         width: 90%;
+    }
+    div#container-textoPers{
+        width: 100%;
+        padding: 0em 1em;
     }
 
     /* div#container-precoCurso main header p{
