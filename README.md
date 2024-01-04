@@ -1,1 +1,1 @@
-# Landing Page - Curso de Síndico Profissional
+# Landing Page Curso de Síndico Profissional
