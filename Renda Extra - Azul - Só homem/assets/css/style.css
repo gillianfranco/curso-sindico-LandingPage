@@ -2083,10 +2083,12 @@ div.precos tr td.subtitulo{
     text-align: justify;
 }
 div.precos .botao{
-    background-color: green;
+    color: black;
+    background-color: #8fff00;
     width: 60%;
     margin-top: 1em;
     margin-bottom: 0.2em;
+    box-shadow: 0 0px 8px 2px rgba(143,255,0);
 }
 .botaoDetalhes{
     width: 1em;
@@ -2327,6 +2329,10 @@ footer#footer-principal main p{
         font-size: 0.6em;
         margin-top: 0.8em;
         color: var(--azul);
+    }
+
+    .beneficios table .subtitulo{
+        font-size: 1em;
     }
 
     /* -------------------------------------------------------------- */
