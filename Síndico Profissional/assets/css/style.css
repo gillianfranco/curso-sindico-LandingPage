@@ -31,6 +31,7 @@ body{
     --azul: #344754;
     --douradoEscuro: #ab8035;
     --azulClaro: #4893e8;
+    --cinza: #e6e8e6;
 }
 
 .container{
@@ -69,6 +70,9 @@ body{
     border-radius: 2em;
     box-shadow: 0em 0em 1em -0.2em rgba(0, 0, 0, 0.444);
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     padding: 0.8em 1em;
 }
 .titulo{
@@ -106,6 +110,56 @@ body{
 
 /* ---------------------------------------------------------------------------------------------------------------- */
 
+div#navBar{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    height: 3em;
+    z-index: 1;
+}
+div#navBar > div{
+    width: 100%;
+    height: 100%;
+    background-color: var(--dourado);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div.container-links{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.container-links a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+a#paginaprincipal:active{
+    background-color: var(--douradoEscuro);
+}
+div.container-links a:hover:not(#paginaprincipal){
+    background-color: var(--douradoEscuro);
+}
+a#logoIcon{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+a#logoIcon img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* --------------------------------------------------- */
+
 header#aboveTheFold{
     width: 100%;
     max-height: 100vh;
@@ -114,7 +168,7 @@ header#aboveTheFold{
     background-size: cover;
     background-position: bottom;
 }
-header#aboveTheFold main.container{
+header#aboveTheFold div.container{
     width: 55%;
     display: flex;
     flex-direction: column;
@@ -128,7 +182,7 @@ header#titulo-principal{
 }
 header#titulo-principal img{
     width: 100%;
-    margin-top: -2em;
+    margin-top: -4em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,29 +195,19 @@ section#container-VideoBotao{
     flex-direction: column;
     justify-content: space-around;
     padding: 1em;
-    margin-top: 1.5em;
 }
 section#container-VideoBotao video{
-    width: 100%;
+    width: 86%;
     border-radius: 0.8em;
 }
 section#container-VideoBotao .botao{
-    width: 100%;
+    width: 86%;
     margin-top: 0.5em;
     padding: 0.7em;
+    font-size: 1.2em;
 }
 
 /* ------------------------------------------------------------------------------- */
-
-section#container-principal{
-    width: 100%;
-}
-
-div#container-documentacao{
-    width: 100%;
-    background: var(--azul);
-    background-size: cover;
-}
 .firefly {
     position: fixed;
     left: 50%;
@@ -1878,53 +1922,114 @@ div#container-documentacao{
     }
 }
 
-div#container-documentacao main header p{
+section#container-principal{
+    width: 100%;
+}
+
+/* -------------------------------------------------------------------------- */
+
+div#container-servicos{
+    background-color: var(--azul);
+}
+
+div#container-servicos section{
+    padding: 1em 8em 0em 8em;
+}
+div#container-servicos p.titulo{
     color: var(--dourado);
 }
-div#container-documentacao main section{
+div#container-servicos p.subtitulo{
+    font-size: 2.2em;
+    text-align: left;
+    margin-bottom: .3em;
+    color: var(--dourado);
+}
+div#container-servicos p.texto{
+    font-size: 1.4em;
+    text-align: justify;
+    margin-bottom: 1.4em;
+    color: var(--cinza);
+}
+div#container-servicos a.texto{
+    color: var(--douradoEscuro);
+}
+
+/* ------------------------------------------------------------------ */
+
+div#container-introCurso > div{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--azul);
+}
+
+div#container-introCurso div.container > div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5em;
+}
+
+div#container-VideoIntroCurso video{
+    width: 100%;
+    border-radius: 1em;
+}
+
+div#container-TituloIntroCurso p.titulo{
+    color: var(--dourado);
+}
+
+div#container-TituloIntroCurso a.botao{
+    margin-top: 1em;
+}
+
+div#container-VideoIntroCurso a.botao{
+    display: none;
+    margin-top: 1em;
+}
+
+
+/* -------------------------------------------------------------------------- */
+div#container-cortesPodcast{
+    background-color: var(--azul);
+}
+div#container-cortesPodcast div header p{
+    color: var(--dourado);
+}
+div#container-cortesPodcast div section{
     width: 100%;
     margin-top: 2em;
 }
-div.container-article{
+div.container-cortes{
+    max-width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    width: 100%;
 }
-div.container-article:last-child{
+div.container-cortes:last-child{
     margin-bottom: 1em;
 }
-article.article-documentacao{
-    width: 260px;
-    border-radius: 1em;
+div.container-cortes iframe{
+    width: 50%;
+    height: 26vw;
+    border-radius: 0.8em;
     box-shadow: 0em 0em 1em -0.2em rgba(0, 0, 0, 0.444);
-    padding: 0.5em;
-    background-color: white;
     margin: 0.2em;
-}
-article.article-documentacao img{
-    width: 76%;
-    border-radius: 50%;
-    border: 0.2em solid var(--dourado);
-}
-article.article-documentacao p{
-    margin-top: 1.3em;
-    color: var(--azul);
-    text-align: center;
 }
 
 /* ------------------------------------------------------------------------------ */
 
-div#container-professores{
+/* div#container-professores{
     width: 100%;
-    background: rgb(226, 178, 82);
-    background: linear-gradient(180deg, rgba(226, 178, 82) 0%, rgba(226,177,82,0.8492647058823529) 93%, rgba(255,255,255,1) 100%);
+    background-color: var(--dourado);
     background-size: cover;
 }
-div#container-professores main header p{
+div#container-professores div header p{
     color: white;
     text-shadow: 0.05em 0.06em 0.05em rgba(0, 0, 0, 0.444);
 }
-div#container-professores main section{
+div#container-professores div section{
     margin-top: 2em;
     display: flex;
     flex-direction: column;
@@ -1959,50 +2064,22 @@ div.container-textoProf{
 }
 div.container-textoProf p strong{
     color: var(--dourado);
-}
-
-/* -------------------------------------------------------------------------- */
-div#container-cortesPodcast{
-    background-color: white;
-}
-div#container-cortesPodcast main header p{
-    color: var(--dourado);
-}
-div#container-cortesPodcast main section{
-    width: 100%;
-    margin-top: 2em;
-}
-div.container-cortes{
-    max-width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-div.container-cortes:last-child{
-    margin-bottom: 1em;
-}
-div.container-cortes iframe{
-    width: 50%;
-    height: 26vw;
-    border-radius: 0.8em;
-    box-shadow: 0em 0em 1em -0.2em rgba(0, 0, 0, 0.444);
-    margin: 0.2em;
-}
+} */
 
 /* -------------------------------------------------------------------------- */
 
-div#container-precoCurso{
+/* div#container-precoCurso{
     width: 100%;
     background-image: url(../images/Fundos/Fundo-ConteinerPreco.png);
     background-size: cover;
     background-position: center;
 }
-div#container-precoCurso main header p{
+div#container-precoCurso div header p{
     color: white;
     text-shadow: 0.05em 0.06em 0.05em rgba(0, 0, 0, 0.444);
     margin-top: 1em;
 }
-div#container-precoCurso main section{
+div#container-precoCurso div section{
     width: 100%;
     margin-top: 0.5em;
 }
@@ -2016,6 +2093,55 @@ p#textoPers{
     text-shadow: 0.1em 0.08em 0.1em rgba(0, 0, 0, 0.444);
     text-align: justify;
 }
+div#container-videoApresentacao{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#container-videoApresentacao video{
+    width: 60%;
+    border-radius: 0.8em;
+    margin-top: 1em;
+}
+
+div#container-documentacao{
+    width: 100%;
+}
+div#container-documentacao div header p{
+    color: white;
+}
+div#container-documentacao div section{
+    width: 100%;
+    margin-top: 2em;
+}
+div.container-article{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+div.container-article:last-child{
+    margin-bottom: 1em;
+}
+article.article-documentacao{
+    width: 260px;
+    border-radius: 1em;
+    box-shadow: 0em 0em 1em -0.2em rgba(0, 0, 0, 0.444);
+    padding: 0.5em;
+    background-color: white;
+    margin: 0.2em;
+}
+article.article-documentacao img{
+    width: 76%;
+    border-radius: 50%;
+    border: 0.2em solid var(--dourado);
+}
+article.article-documentacao p{
+    margin-top: 1.3em;
+    color: var(--azul);
+    text-align: center;
+}
+
 div#container-preco{
     width: 100%;
     display: flex;
@@ -2073,25 +2199,27 @@ div.precos tr td.subtitulo{
     text-align: justify;
 }
 div.precos .botao{
-    background-color: green;
+    color: black;
+    background-color: #8fff00;
     width: 60%;
     margin-top: 1em;
     margin-bottom: 0.2em;
+    box-shadow: 0 0px 8px 2px rgba(143,255,0);
 }
 .botaoDetalhes{
     width: 1em;
-}
+} */
 
 /* --------------------------------------------------------------------------  */
 
 footer#footer-principal{
     width: 100%;
-    background-color: var(--azul);
+    background-color: var(--dourado);
 }
-footer#footer-principal main{
+footer#footer-principal div{
     width: 100%;
 }
-.tiraDuvidas{
+/* .tiraDuvidas{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -2112,7 +2240,7 @@ footer#footer-principal main{
     font-size: 1.2em;
     font-family: "Montserrat";
     font-weight: 700;
-}
+} */
 div.redes{
     display: flex;
     flex-direction: column;
@@ -2134,16 +2262,15 @@ div.redes div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1em;
 }
-footer#footer-principal main div.center{
+footer#footer-principal div div.center{
     width: 100%;
-    margin-top: 1em;
+    margin-bottom: .5em;
 }
-footer#footer-principal main div.center img{
-    width: 12em;
+footer#footer-principal div div.center img{
+    width: 10em;
 }
-footer#footer-principal main p{
+footer#footer-principal div p{
     color: white;
     margin-top: 0.5em;
 }
@@ -2188,7 +2315,7 @@ footer#footer-principal main p{
         background-size: cover;
         background-position: top;
     }
-    header#aboveTheFold main.container{
+    header#aboveTheFold div.container{
         width: 100%;
         height: 100%;
         display: flex;
@@ -2223,33 +2350,52 @@ footer#footer-principal main p{
         padding: 0.7em;
     }
 
-    /* ----------------------------------------------------------------------------- */
+    /* --------------------------------------------------- */
 
-    #container-documentacao{
-        z-index: 1;
-        margin-top: -5em;
+    div#container-introCurso{
+        margin-top: -4em;
     }
-
-    article.article-documentacao{
-        width: 315px;
-        border-radius: 1em;
-        box-shadow: 0em 0em 1em -0.2em rgba(0, 0, 0, 0.444);
-        padding: 0.5em;
-        background-color: white;
-        margin: 0.2em;
+    div#container-introCurso > div{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--azul);
     }
-    article.article-documentacao img{
-        width: 70%;
-        border-radius: 50%;
-        border: 0.2em solid var(--dourado);
+    div#container-introCurso div.container div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    article.article-documentacao p{
-        font-size: 0.6em;
-        margin-top: 0.8em;
-        color: var(--azul);
+    div#container-TituloIntroCurso p.titulo{
+        margin-bottom: .3em;
+    }
+    div#container-VideoIntroCurso a.botao{
+        display: flex;
+        width: 90%;
+        margin-bottom: 1em;
+    }
+    div#container-TituloIntroCurso a.botao{
+        display: none;
     }
 
     /* --------------------------------------------------------- */
+    div#container-cortesPodcast{
+        margin-top: -0.2em;
+    }
+    div.container-cortes{
+        width: 100%;
+        flex-direction: column;
+    }
+    div.container-cortes iframe{
+        width: 100%;
+        height: 52.8vw;
+        border-radius: 0.8em;
+        box-shadow: 0em 0em 1em -0.2em rgba(0, 0, 0, 0.444);
+        margin: 0.2em;
+    }
+
+    /*
 
     article.article-professores{
         width: 100%;
@@ -2282,21 +2428,7 @@ footer#footer-principal main p{
         margin: 1em;
     }
 
-    /* --------------------------------------------------------- */
-
-    div.container-cortes{
-        width: 100%;
-        flex-direction: column;
-    }
-    div.container-cortes iframe{
-        width: 100%;
-        height: 52.8vw;
-        border-radius: 0.8em;
-        box-shadow: 0em 0em 1em -0.2em rgba(0, 0, 0, 0.444);
-        margin: 0.2em;
-    }
-
-    /* ------------------------------------------------------------- */
+    
 
     div#container-preco{
         flex-direction: column;
@@ -2314,23 +2446,43 @@ footer#footer-principal main p{
         padding: 0em 1em;
     }
 
-    /* div#container-precoCurso main header p{
+    div#container-videoApresentacao video{
+        width: 100%;
+        border-radius: 0.8em;
         margin-top: 1em;
     }
-    div#container-textoPers{
-        padding: 0em 0.5em;
-    }
-    div#container-preco p.subtitulo{
-        font-size: 1.2em;
-    }
-    div#container-preco p.titulo{
-        font-size: 4em;
-    }
-    div.container-botao{
-        margin-bottom: 1em;
-    } */
 
-    /* -------------------------------------------------------------- */
+    #container-documentacao{
+        margin: 1em 0em;
+    }
+    article.article-documentacao{
+        width: 315px;
+        border-radius: 1em;
+        box-shadow: 0em 0em 1em -0.2em rgba(0, 0, 0, 0.444);
+        padding: 0.5em;
+        background-color: white;
+        margin: 0.2em;
+    }
+    article.article-documentacao img{
+        width: 70%;
+        border-radius: 50%;
+        border: 0.2em solid var(--dourado);
+    }
+    article.article-documentacao p{
+        font-size: 0.6em;
+        margin-top: 0.8em;
+        color: var(--azul);
+    }
+
+    .beneficios table .subtitulo{
+        font-size: 1em;
+    }
+
+    */
+
+    footer#footer-principal{
+        margin-top: -1em;
+    }
 
     .tiraDuvidas{
         flex-direction: column;
