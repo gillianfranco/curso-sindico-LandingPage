@@ -2060,10 +2060,18 @@ div.preco{
 div.preco p.texto{
     text-align: center;
 }
-div.preco p.titulo{
+div.preco p.titulo:nth-child(1){
+    font-size: 2em;
+}
+div.preco p.titulo:nth-child(2){
     font-size: 3em;
 }
+span.preco-antigo{
+    text-decoration: line-through;
+    font-size: 1em;
+}
 div.preco p.subtitulo{
+    margin-top: -.5em;
     font-size: 1.3em;
 }
 div.preco p{
