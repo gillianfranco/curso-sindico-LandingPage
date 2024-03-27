@@ -157,6 +157,7 @@ section#container-VideoBotao .botao{
 
 section#container-principal{
     width: 100%;
+    margin-top: -1em;
 }
 
 div#container-documentacao{
@@ -2227,7 +2228,7 @@ footer#footer-principal main p{
 
     #container-documentacao{
         z-index: 1;
-        margin-top: -5em;
+        margin-top: -10em;
     }
 
     article.article-documentacao{
